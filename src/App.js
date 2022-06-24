@@ -1,3 +1,4 @@
+// npm run startで起動する。tailWind CSSを導入している時は npm run startで起動する
 import React, { useState, useRef } from "react";
 import ImageGrallery from "./components/ImageGrallery";
 
