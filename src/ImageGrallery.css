@@ -1,0 +1,76 @@
+.images-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10rem;
+  margin-bottom: 10rem;
+  /* 行間を空ける(下)row-gap */
+  row-gap: 0.5rem;
+}
+
+.images-wrapper::after {
+  width: 32.9%;
+  content: "";
+  display: block;
+}
+
+.image {
+  width: 32.9%;
+  height: 250px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: all;
+  opacity: 1;
+}
+
+.image img:hover {
+  transition-duration: 0.3s;
+  transform: translateY(2px);
+  opacity: 0.8;
+}
+
+@media (max-width: 1200px) {
+  .image {
+    height: 200px;
+  }
+}
+@media (max-width: 992px) {
+  .images-wrapper {
+    padding: 0 7rem;
+    row-gap: 0.3rem;
+  }
+  .image {
+    height: 150px !important;
+  }
+}
+@media (max-width: 772px) {
+  .images-wrapper {
+    padding: 0 5rem;
+    row-gap: 0.2rem;
+  }
+}
+@media (max-width: 772px) {
+  .images-wrapper {
+    padding: 0 2rem;
+    row-gap: 0.25rem;
+  }
+  .image {
+    width: 49.5%;
+  }
+}
+@media (max-width: 441px) {
+  .images-wrapper {
+    padding: 0 1rem;
+    row-gap: 0.2rem;
+  }
+  .image {
+    height: 130px !important;
+  }
+}
